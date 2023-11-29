@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo bash -c 'cat << EOF > /usr/local/bin/ec2-inactivity-shutdown.sh
+sudo bash -c 'cat << "EOF" > /usr/local/bin/ec2-inactivity-shutdown.sh
 #!/bin/bash
 
 # Set timeout values
@@ -36,7 +36,7 @@ while true; do
 done
 EOF'
 sudo chmod +x /usr/local/bin/ec2-inactivity-shutdown.sh
-sudo bash -c 'cat << EOF > /etc/systemd/system/ec2-inactivity-shutdown.service
+sudo bash -c 'cat << "EOF" > /etc/systemd/system/ec2-inactivity-shutdown.service
 [Unit]
 Description=EC2 Inactivity Shutdown Service
 
