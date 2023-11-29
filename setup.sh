@@ -50,5 +50,5 @@ RestartSec=5s
 WantedBy=multi-user.target
 EOF'
 sudo systemctl daemon-reload
-sudo systemctl enable inactivity-shutdown.service
-sudo systemctl start inactivity-shutdown.service
+sudo systemctl enable ec2-inactivity-shutdown.service
+sudo systemctl start ec2-inactivity-shutdown.service
